@@ -26,7 +26,8 @@ module Kairos
     #  - client = Kairos::Client.new(:app_id => '1234', :app_key => 'abcde1234')
     #  - client.enroll(:url => 'https://some.url.com/to_some.jpg', :subject_id => 'gemtest', :gallery_name => 'testgallery')
     def enroll(options={})
-      post_to_api(Kairos::Configuration::ENROLL, options)
+      puts "Was Inside Enroll"
+      post_to_api("http://api.kairos.com/enroll", options)
     end
 
     # Recognize an Image
