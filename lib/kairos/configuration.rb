@@ -2,7 +2,7 @@ module Kairos
 
   module Configuration
     VALID_CONNECTION_KEYS  = [:app_id, :app_key].freeze
-    VALID_OPTIONS_KEYS     = [:url, :subject_id, :gallery_name, :threshold, :max_num_results, :selector].freeze
+    VALID_OPTIONS_KEYS     = [:image, :url, :subject_id, :gallery_name, :threshold, :max_num_results, :selector].freeze
     VALID_CONFIG_KEYS      = VALID_CONNECTION_KEYS + VALID_OPTIONS_KEYS
 
     DEFAULT_USER_AGENT     = "Kairos API Ruby Gem #{Kairos::VERSION}".freeze
